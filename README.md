@@ -1,3 +1,10 @@
+# Pandemonium-V1
+   <a><img src='https://i.imgur.com/w1AG3gU.gif'/></a><a><img src='https://i.imgur.com/w1AG3gU.gif'/></a>
+<p align="center"> 
+<u>⚡ A simple WhatsApp User Bot Coded By Wealth Shedrack ⚡</u>
+</p>
+#
+
 # Pandemonium-v1
 ## Pandemonium-v1 Deployment Method
 ---
