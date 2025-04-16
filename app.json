@@ -1,0 +1,37 @@
+{
+  "name": "PANDEMONIUM-V1",
+  "description": "Whiskey Sockets Baileys Whatsapp bot By Cshark",
+  "logo": "https://telegra.ph/file/f6230a0cb5b118fa01561.jpg",
+  "keywords": ["PANDEMONIUM-V1"],
+  "success_url": "/",
+  "stack": "container",
+  "env": {
+    "SESSION_ID": {
+      "description": "Put your Pandemonium session-id here.",
+      "required": true,
+      "value": ""
+    },
+    "PREFIX": {
+      "description": "paste your bot prefix note! Don't apply null prefix.",
+      "required": false,
+      "value": "."
+    },
+  
+    "OWNER_NUMBER": {
+      "description": "put the owner number for bot.",
+      "required": false,
+      "value": "2348101668050"
+    },
+    "BOT_NAME": {
+      "description": "Type here the bot name.",
+      "required": false,
+      "value": "PANDEMONIUM-V1"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
+  "stack": "heroku-24"
+}
