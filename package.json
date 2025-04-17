@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo"
+    "start": "pm2 start index.js --deep-monitoring --attach --name Pandemonium-v1",
+    "stop": "pm2 stop Pandemonium-v1",
+    "restart": "pm2 restart Pandemonium-v1"
   },
   "repository": {
     "type": "git",
