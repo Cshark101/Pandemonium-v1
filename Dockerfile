@@ -6,17 +6,14 @@ RUN apt-get update && \
   imagemagick \
   webp && \
   apt-get upgrade -y && \
-  npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
-  
-COPY package.json .
-  
-RUN gitclone https://github.com/Cshark101/Pandemonium_v1.git
 
-RUN yarn install 
+COPY package.json .
+
+RUN npm install && npm install -g qrcode-terminal pm2
 
 COPY . .
 
 EXPOSE 3000
 
-CMD ["npm","start" ]
+CMD ["npm", "start"]
