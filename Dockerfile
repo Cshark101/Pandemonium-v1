@@ -9,7 +9,7 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/Cshark101/Cshark-v1.git  /root/Cshark
+RUN git clone https://github.com/Cshark101/Pandemonium-v1.git  /root/Cshark
 WORKDIR /root/Cshark101/
 
 
