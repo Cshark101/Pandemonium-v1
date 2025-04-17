@@ -11,7 +11,7 @@ RUN apt-get update && \
   
 COPY package.json .
   
-RUN gitclone https://github.com/Cshark101/Pandemonium_v1
+RUN gitclone https://github.com/Cshark101/Pandemonium_v1.git
 
 RUN yarn install 
 
