@@ -9,16 +9,14 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/Cshark101/Pandemonium-v1.git  /root/Cshark
-WORKDIR /root/Cshark101/
-
-
 COPY package.json .
+
+
 RUN npm install pm2 -g
 RUN npm install --legacy-peer-deps
 
 COPY . .
 
-EXPOSE 5000
+EXPOSE 3000
 
-CMD ["node", "flash.js"]
+CMD ["node","index.js" ]
