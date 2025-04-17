@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/Cshark101/Pandemonium-v1#readme",
   "dependencies": {
-    "@adiwajshing/baileys": "^3.5.3",
+    "@whiskeysockets/baileys": "^3.5.3",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@dark-yasiya/scrap": "^1.0.1",
     "@dark-yasiya/yt-dl.js": "^1.0.5",
