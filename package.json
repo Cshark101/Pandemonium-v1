@@ -1,4 +1,15 @@
- },
+ {
+  "name": "pandemonium-v1",
+  "version": "1.1.0",
+  "description": "a whatsapp bot made by cshark101",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cshark101/Pandemonium-v1.git"
+  },
   "keywords": [
     "pandemonium"
   ],
@@ -9,7 +20,7 @@
   },
   "homepage": "https://github.com/Cshark101/Pandemonium-v1#readme",
   "dependencies": {
-    "@adiwajshing/baileys": "^5.0.0",
+    "@adiwajshing/baileys": "^3.5.3",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@dark-yasiya/scrap": "^1.0.1",
     "@dark-yasiya/yt-dl.js": "^1.0.5",
@@ -17,9 +28,10 @@
     "@mrnima/facebook-downloader": "^1.0.0",
     "@mrnima/tiktok-downloader": "^1.0.0",
     "@vitalets/google-translate-api": "^9.2.1",
+    "api-dylux": "^1.8.5",
     "axios": "^1.8.4",
     "baileys": "github:whiskeysockets/baileys",
-    "btch-downloader": "^3.7.18",
+    "btch-downloader": "^2.0.9",
     "dotenv": "^16.5.0",
     "express": "^4.21.2",
     "lyrics-finder": "^21.7.0",
