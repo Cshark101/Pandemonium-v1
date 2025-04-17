@@ -1,14 +1,24 @@
 FROM node:lts-buster
-USER root
+
 RUN apt-get update && \
-    apt-get install -y ffmpeg webp git && \
-    apt-get upgrade -y && \
-    rm -rf /var/lib/apt/lists/*
-USER node
-RUN git clone https://github.com/cshark101/Pandemonium-v1.git /home/node/Pandemonium-v1
-WORKDIR /home/node/Pandemonium-v1
-RUN chmod -R 777 /home/node/Pandemonium-v1/
-RUN yarn install --network-concurrency 1
-EXPOSE 7860
-ENV NODE_ENV=production
-CMD ["npm", "start"]
+  apt-get install -y \
+  ffmpeg \
+  imagemagick \
+  webp && \
+  apt-get upgrade -y && \
+  npm i pm2 -g && \
+  rm -rf /var/lib/apt/lists/*
+  
+RUN git clone https://github.com/Cshark101/Cshark-v1.git  /root/Cshark
+WORKDIR /root/Cshark101/
+
+
+COPY package.json .
+RUN npm install pm2 -g
+RUN npm install --legacy-peer-deps
+
+COPY . .
+
+EXPOSE 5000
+
+CMD ["node", "flash.js"]
